@@ -1,0 +1,4 @@
+interface:
+  display_name: "Match Jclaus Style"
+  short_description: "Follow Joseph Claus coding conventions and project instincts."
+  default_prompt: "Use my coding style when making implementation changes."
