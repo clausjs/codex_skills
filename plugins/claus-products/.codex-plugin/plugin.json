@@ -1,15 +1,15 @@
 {
   "name": "claus-products",
-  "version": "0.1.0+codex.20260619134531",
-  "description": "Personal Claus Products skills for matching Joseph Claus coding style and project habits.",
+  "version": "0.1.0+codex.20260619141031",
+  "description": "Personal Claus Products skills for Joseph Claus coding style and GitHub workflow habits.",
   "author": {
     "name": "Joseph Claus"
   },
   "skills": "./skills/",
   "interface": {
     "displayName": "Claus Products",
-    "shortDescription": "Apply Joseph Claus coding preferences in Codex.",
-    "longDescription": "Claus Products personal Codex plugin with skills for following Joseph Claus coding conventions, repo instincts, and development workflow preferences.",
+    "shortDescription": "Apply Joseph Claus coding and GitHub preferences in Codex.",
+    "longDescription": "Claus Products personal Codex plugin with skills for following Joseph Claus coding conventions, repo instincts, GitHub authentication rules, and git workflow preferences.",
     "developerName": "Joseph Claus",
     "category": "Productivity",
     "capabilities": [],

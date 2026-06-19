@@ -1,0 +1,4 @@
+interface:
+  display_name: "GitHub Tasks"
+  short_description: "Handle Git and GitHub workflow tasks."
+  default_prompt: "Use $github-tasks to make concise, compartmentalized git and GitHub changes."

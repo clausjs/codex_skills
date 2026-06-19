@@ -2,7 +2,7 @@
 
 This repo holds personal Codex plugins, skills, and references for Claus Products development workflows.
 
-The current plugin is `claus-products`, which includes the `match-jclaus-style` skill. That skill captures coding-style guidance from selected Joseph Claus projects and helps Codex keep future code changes consistent with those patterns.
+The current plugin is `claus-products`, which includes the `match-jclaus-style` and `github-tasks` skills. These skills capture coding-style guidance from selected Joseph Claus projects and keep git or GitHub changes aligned with Joseph's workflow preferences.
 
 ## Repo Layout
 
@@ -18,6 +18,9 @@ plugins/
         references/
           coding-style.md
           repo-corpus.md
+      github-tasks/
+        SKILL.md
+        agents/openai.yaml
 ```
 
 Use this repo as the editable source of truth. For local testing, copy `plugins/claus-products` into whichever plugin directory your Codex marketplace entry points to.
@@ -27,7 +30,7 @@ Use this repo as the editable source of truth. For local testing, copy `plugins/
 This plugin was created with Codex's plugin and skill authoring workflow:
 
 - Scaffold a plugin manifest at `plugins/claus-products/.codex-plugin/plugin.json`.
-- Add the `match-jclaus-style` skill under `plugins/claus-products/skills/`.
+- Add the `match-jclaus-style` and `github-tasks` skills under `plugins/claus-products/skills/`.
 - Store the detailed coding-style profile in skill reference files instead of putting everything in `SKILL.md`.
 - Register the plugin in a personal or repo marketplace during local testing.
 
@@ -145,7 +148,7 @@ The loader makes the variables available to that command and any child processes
 
 6. Restart Codex after local plugin or marketplace changes so the app reloads the plugin metadata.
 
-## Updating The Style Skill
+## Updating The Skills
 
 Use these files for normal style-profile edits:
 
@@ -154,3 +157,9 @@ Use these files for normal style-profile edits:
 - `plugins/claus-products/skills/match-jclaus-style/references/repo-corpus.md`
 
 Keep the style corpus narrow. Include only repos Joseph identifies as representative, and explicitly exclude old or third-party code so the skill does not learn the wrong habits.
+
+Use these files for git and GitHub workflow edits:
+
+- `plugins/claus-products/skills/github-tasks/SKILL.md`
+
+Keep GitHub token handling in the skill aligned with this repo's env-loader instructions. Prefer `GITHUB_TOKEN`, avoid printing secret values, and use concise, descriptive commit messages with smaller commits when changes naturally split apart.
