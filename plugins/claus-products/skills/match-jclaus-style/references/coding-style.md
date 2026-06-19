@@ -6,6 +6,11 @@ This profile was derived from representative Claus Products source samples in th
 - `spl-web`
 - `spl-deployment`
 - `elgato/spl-soundboard`
+- `clausjs/clausjs.github.io`
+- `clausjs/Discord-Bot-Status-Watcher`
+- `clausjs/discord_bot_starter`
+- `clausjs/express-reactRouter-scaffold`
+- `clausjs/webhook-torrent-reporter`
 
 Do not infer style from `joebot-old`, unrelated local clones, third-party repositories, or projects the user did not identify as representative.
 
