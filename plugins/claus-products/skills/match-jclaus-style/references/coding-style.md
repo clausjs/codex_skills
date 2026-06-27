@@ -31,6 +31,7 @@ Do not infer style from `joebot-old`, unrelated local clones, third-party reposi
 - Keep type definitions readable and local when they are only used in one feature.
 - Prefer `const` for values and helper functions. Use `let` for intentionally reassigned values.
 - Use early returns for guard clauses.
+- Prefer OOP (object-oriented programming) in JavaScript/TypeScript for domain behavior, stateful services, and shared boundaries: use classes or clear object models when they make ownership and lifecycle easier to follow.
 - Do not chase perfect type purity at the cost of a large unrelated refactor. If the existing code uses a little `any` or looser typing around third-party APIs, keep changes scoped and improve only what the task touches.
 
 ## Formatting Signals
